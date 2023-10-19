@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+Prueba - Cafetería Nanacao
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+En esta prueba validaremos nuestros conocimientos de testing unitario a una API REST con
+JEST y el paquete supertest. Para lograrlo, necesitarás aplicar los matchers del framework y
+estudiar con cuidado la composición del servidor de apoyo disponible entre los archivos de
+esta unidad.
+Lee todo el documento antes de comenzar el desarrollo individual, para asegurarte de tener
+el máximo de puntaje y enfocar bien los esfuerzos.
+Descripción
+La Cafetería Nanacao está abriendo una nueva sucursal en el centro de la ciudad después de
+tener un gran éxito en su local principal.
+Su dueña, Julieta Nanacao, ha solicitado luego de varios fallos repentinos en su sistema de
+administración, que se desarrollen tests para comprobar que todas las funcionalidades
+funcionen correctamente.
+En este desafío deberás crear tests para probar las diferentes rutas existentes en la API
+REST de apoyo.
+Requerimientos
+1. Testea que la ruta GET /cafes devuelve un status code 200 y el tipo de dato recibido
+es un arreglo con por lo menos 1 objeto. (3 Puntos)
+2. Comprueba que se obtiene un código 404 al intentar eliminar un café con un id que
+no existe. (2 Puntos)
+3. Prueba que la ruta POST /cafes agrega un nuevo café y devuelve un código 201. (2
+Puntos)
+4. Prueba que la ruta PUT /cafes devuelve un status code 400 si intentas actualizar un
+café enviando un id en los parámetros que sea diferente al id dentro del payload.
+(3 Puntos)
